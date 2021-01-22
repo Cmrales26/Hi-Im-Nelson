@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+}
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: 658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.glass {
+  /* background: white; */
+  min-height: 84vh;
+  width: 66%;
+  /* background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3)); */
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+.user-black {
+  display: none;
+}
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  /* background: linear-gradient(to right bottom, rgba(255,255,255,0.1),rgba(255,255,255,0.5)); */
+  border-radius: 2rem;
+}
+.link {
+  display: flex;
+  margin: 2rem 5rem;
+  align-items: center;
+}
+.link i {
+  font-size: 2rem;
+  color: #69dddd;
+}
+.link a {
+  text-decoration: none;
+}
+.link h2 {
+  padding: 0rem 2rem;
+  color: black;
+}
+.level {
+  flex: 2;
+}
+.contact {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+}
+.contact h2,
+a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.contact i {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+/* Lenguages*/
+.level {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.status h1 {
+  font-size: 1.8rem;
+}
+.status ul {
+  list-style: none;
+  display: flex;
+}
+.cards {
+  width: 29rem;
+}
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.8)
+  );
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.5);
+}
+.card i {
+  font-size: 5rem;
+  color: rgba(108, 222, 294, 0.6);
+}
+.card-info {
+  margin-left: 1rem;
+}
+.progress-html {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 120%;
+  height: 20%;
+  border-radius: 1rem;
+  position: relative;
+}
+.porcentage-html {
+  margin-left: 2rem;
+}
+.porcentage-css,
+.porcentage-js {
+  margin-left: 5rem;
+}
+.progress-css {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 80%;
+  height: 20%;
+  border-radius: 1rem;
+  position: relative;
+}
+.progress-js {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 20%;
+  height: 20%;
+  border-radius: 1rem;
+  position: relative;
+}
+.footer{
+    display: flex;
+}
+.footer a{
+    color: #65dfc9;
+}
+/*THEME*/
+.theme {
+  border: none;
+  background: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  margin-top: 0.7rem;
+}
+.theme.active span {
+  color:#ffD200;
+}
+.theme span {
+  width: 3rem;
+  height: 1rem;
+  display: block;
+  background: none;
+  color: #252850;
+  font-size: 1.5rem;
+}
+body.dark {
+  background: black;
+  color: white;
+  opacity: 1;
+}
+body.dark .link h2 {
+  color: white;
+  opacity: 1;
+}
+body.dark .link i {
+  color: #ee82ee;
+  opacity: 1;
+}
+body.dark .card {
+  background: linear-gradient(
+    to left top,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
+  box-shadow: 6px 6px 20px rgba(114, 114, 114, 0.5);
+}
+body.dark .status h1 {
+  color: #ee82ee;
+  opacity: 1;
+}
+body.dark .user h3 {
+  color: #ee82ee;
+  opacity: 1;
+}
+body.dark .contact {
+  background: linear-gradient(to right top, #ee82ee, #6b3e6b);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+}
+body.dark .card-info {
+  color: white;
+  opacity: 1;
+}
+body.dark .card i {
+  color: #ee82ee;
+}
+body.dark .progress-html {
+  background: linear-gradient(to right top, #ee82ee, #6b3e6b);
+}
+body.dark .progress-css {
+  background: linear-gradient(to right top, #ee82ee, #6b3e6b);
+}
+body.dark .progress-js {
+  background: linear-gradient(to right top, #ee82ee, #6b3e6b);
+}
+body.dark .footer a {
+  color: #ee82ee;
+  opacity: 1;
+}
+body.dark .user-white{
+    display: none;
+}
+body.dark .user-black{
+    display: inline;
+}
+/*Small Laptop*/
+@media screen and (max-width: 1025px) {
+  .glass {
+    width: 90%;
+  }
+  .cards {
+    margin-left: -1rem;
+  }
+}
+/*iPad*/
+@media screen and (max-width: 769px) {
+  .glass {
+    display: block;
+    width: 70%;
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
+  }
+  .status h1 {
+    text-align: center;
+  }
+  .cards {
+    margin-left: 0rem;
+  }
+  .contact {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .theme {
+    position: absolute;
+    outline: none;
+    margin-top: -37rem;
+    margin-left: 10rem;
+  }
+}
+/*Cellphones*/
+@media screen and (max-width: 533px) {
+  .glass {
+    width: 85%;
+  }
+  .cards {
+    width: 100%;
+    align-content: center;
+  }
+  .status h1 {
+    text-align: center;
+  }
+  .level {
+    margin: 1rem;
+    display: block;
+  }
+  .card {
+    display: block;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .card i {
+    font-size: 5rem;
+  }
+  .card-info {
+    margin-left: 0rem;
+  }
+  .progress-html {
+    width: 80%;
+    height: 13px;
+  }
+  .porcentage-css,
+  .porcentage-js,
+  .porcentage-html {
+    margin-left: 0;
+    text-align: center;
+  }
+  .progress-css {
+    width: 60%;
+    height: 13px;
+  }
+  .progress-js {
+    width: 20%;
+    height: 13px;
+  }
+
+  .theme {
+    outline: none;
+    margin-top: -35rem;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 427px) {
+  .glass {
+    width: 85%;
+  }
+  .status h1 {
+    text-align: center;
+  }
+  .level {
+    margin: 1rem;
+    display: block;
+  }
+  .card {
+    display: block;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .card i {
+    font-size: 5rem;
+  }
+  .card-info {
+    margin-left: 0rem;
+  }
+  .progress-html {
+    width: 80%;
+    height: 13px;
+  }
+  .porcentages-html {
+    margin-left: 1rem;
+  }
+  .porcentages-css,
+  .porcentages-js {
+    margin-left: 1.5rem;
+  }
+  .progress-css {
+    width: 60%;
+    height: 13px;
+  }
+  .progress-js {
+    width: 20%;
+    height: 13px;
+  }
+  .theme {
+    position: absolute;
+    outline: none;
+    margin-top: -36rem;
+    margin-left: -2rem;
+  }
+}
+@media screen and (max-width: 418px) {
+    .footer p, a{
+        font-size: 14px;
+    }
+  
+
+@media screen and (max-width: 389px) {
+    .footer p, a{
+        font-size: 12.5px;
+    }
+  }
+@media screen and (max-width: 360px) {
+    .footer p, a{
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 345px) {
+    .footer p, a{
+        font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 310px) {
+    .footer p, a{
+        font-size: 8px;
+    }
+  }
+@media screen and (max-width: 257px) {
+    .footer p, a{
+        font-size: 7px;
+    }
+  }
+@media screen and (max-width: 235px) {
+    .footer p, a{
+        font-size: 6px;
+    }
+  }
+  @media screen and (max-width: 213px) {
+    .footer p, a{
+        font-size: 5px;
+    }
+  }
+}
+
+
